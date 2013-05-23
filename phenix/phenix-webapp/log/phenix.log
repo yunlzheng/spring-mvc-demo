@@ -1,0 +1,180 @@
+2013-05-23 18:13:12.413 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+2013-05-23 18:13:12.483 INFO  [XmlWebApplicationContext] Refreshing Root WebApplicationContext: startup date [Thu May 23 18:13:12 CST 2013]; root of context hierarchy
+2013-05-23 18:13:12.525 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-core.xml]
+2013-05-23 18:13:12.526 ERROR [ContextLoader] Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/spring-core.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/spring-core.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:97)
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/spring-core.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:140)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 22 more
+2013-05-23 18:13:54.126 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+2013-05-23 18:13:54.196 INFO  [XmlWebApplicationContext] Refreshing Root WebApplicationContext: startup date [Thu May 23 18:13:54 CST 2013]; root of context hierarchy
+2013-05-23 18:13:54.239 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-core.xml]
+2013-05-23 18:13:54.310 ERROR [ContextLoader] Context initialization failed
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 10 in XML document from ServletContext resource [/WEB-INF/spring-core.xml] is invalid; nested exception is org.xml.sax.SAXParseException: cvc-complex-type.2.3: Element 'property' cannot have character [children], because the type's content type is element-only.
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:396)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:97)
+Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.3: Element 'property' cannot have character [children], because the type's content type is element-only.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:131)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:384)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:318)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:417)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3182)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidComplexType(XMLSchemaValidator.java:3145)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidType(XMLSchemaValidator.java:3105)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processElementContent(XMLSchemaValidator.java:3007)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleEndElement(XMLSchemaValidator.java:2150)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.endElement(XMLSchemaValidator.java:818)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2939)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:648)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:140)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:235)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:284)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
+	... 23 more
+2013-05-23 18:14:24.563 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+2013-05-23 18:14:24.634 INFO  [XmlWebApplicationContext] Refreshing Root WebApplicationContext: startup date [Thu May 23 18:14:24 CST 2013]; root of context hierarchy
+2013-05-23 18:14:24.676 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-core.xml]
+2013-05-23 18:14:24.819 INFO  [PropertiesConfiguration] Loading properties file from class path resource [target-h2.properties]
+2013-05-23 18:14:24.830 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@57922f46: defining beans [org.phenix.common.config.PropertiesConfiguration#0]; root of factory hierarchy
+2013-05-23 18:14:24.834 INFO  [ContextLoader] Root WebApplicationContext: initialization completed in 270 ms
+2013-05-23 18:18:00.207 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+2013-05-23 18:18:00.276 INFO  [XmlWebApplicationContext] Refreshing Root WebApplicationContext: startup date [Thu May 23 18:18:00 CST 2013]; root of context hierarchy
+2013-05-23 18:18:00.318 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-core.xml]
+2013-05-23 18:18:00.442 INFO  [PropertiesConfiguration] Loading properties file from class path resource [target-h2.properties]
+2013-05-23 18:18:00.443 INFO  [DefaultListableBeanFactory] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@784a7df6: defining beans [org.phenix.common.config.PropertiesConfiguration#0]; root of factory hierarchy
+2013-05-23 18:18:00.444 ERROR [ContextLoader] Context initialization failed
+org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [target-h2.properties] cannot be opened because it does not exist
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:87)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:669)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:461)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:97)
+Caused by: java.io.FileNotFoundException: class path resource [target-h2.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:157)
+	at org.springframework.core.io.support.EncodedResource.getReader(EncodedResource.java:129)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:94)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:175)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.mergeProperties(PropertiesLoaderSupport.java:156)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:78)
+	... 16 more
+2013-05-23 18:19:00.217 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+2013-05-23 18:19:00.289 INFO  [XmlWebApplicationContext] Refreshing Root WebApplicationContext: startup date [Thu May 23 18:19:00 CST 2013]; root of context hierarchy
+2013-05-23 18:19:00.331 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-core.xml]
+2013-05-23 18:19:00.459 INFO  [PropertiesConfiguration] Loading properties file from ServletContext resource [/WEB-INF/target-h2.properties]
+2013-05-23 18:19:00.469 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@44676e3f: defining beans [org.phenix.common.config.PropertiesConfiguration#0]; root of factory hierarchy
+2013-05-23 18:19:00.474 INFO  [ContextLoader] Root WebApplicationContext: initialization completed in 257 ms
+2013-05-23 18:19:00.623 INFO  [DispatcherServlet] FrameworkServlet 'DispatcherServlet': initialization started
+2013-05-23 18:19:00.626 INFO  [XmlWebApplicationContext] Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Thu May 23 18:19:00 CST 2013]; parent: Root WebApplicationContext
+2013-05-23 18:19:00.627 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-webmvc.xml]
+2013-05-23 18:19:00.628 ERROR [DispatcherServlet] Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/spring-webmvc.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/spring-webmvc.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:341)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:600)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:666)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:519)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:460)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
+	at org.mortbay.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:440)
+	at org.mortbay.jetty.servlet.ServletHolder.doStart(ServletHolder.java:263)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:736)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:140)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at runjettyrun.Bootstrap.main(Bootstrap.java:97)
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/spring-webmvc.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:140)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:328)
+	... 29 more
+2013-05-23 18:19:52.113 INFO  [ContextLoader] Root WebApplicationContext: initialization started
+2013-05-23 18:19:52.185 INFO  [XmlWebApplicationContext] Refreshing Root WebApplicationContext: startup date [Thu May 23 18:19:52 CST 2013]; root of context hierarchy
+2013-05-23 18:19:52.228 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-core.xml]
+2013-05-23 18:19:52.352 INFO  [PropertiesConfiguration] Loading properties file from ServletContext resource [/WEB-INF/target-h2.properties]
+2013-05-23 18:19:52.363 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@62770d2e: defining beans [org.phenix.common.config.PropertiesConfiguration#0]; root of factory hierarchy
+2013-05-23 18:19:52.367 INFO  [ContextLoader] Root WebApplicationContext: initialization completed in 254 ms
+2013-05-23 18:19:52.437 INFO  [DispatcherServlet] FrameworkServlet 'DispatcherServlet': initialization started
+2013-05-23 18:19:52.440 INFO  [XmlWebApplicationContext] Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Thu May 23 18:19:52 CST 2013]; parent: Root WebApplicationContext
+2013-05-23 18:19:52.441 INFO  [XmlBeanDefinitionReader] Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-mvc.xml]
+2013-05-23 18:19:52.578 INFO  [DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7461f533: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,MessageConverters,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@62770d2e
+2013-05-23 18:19:52.831 INFO  [DispatcherServlet] FrameworkServlet 'DispatcherServlet': initialization completed in 394 ms
